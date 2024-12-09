@@ -1,0 +1,16 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+.container {
+  text-align: center;
+  p {
+    font-size: 20px;
+    color: var(--footer-text-color);
+  }
+}
+p .logo {
+  font-family: "caveat", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  /* margin-bottom: 30px; */
+}
