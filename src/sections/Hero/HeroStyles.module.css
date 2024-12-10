@@ -29,6 +29,17 @@
     width: fit-content;
     align-self: center;
   }
+
+  .info a img {
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .info a img:hover {
+    transform: rotate3d(0, 0, 1, 360deg);
+    filter: invert(43%) sepia(67%) saturate(701%) hue-rotate(169deg)
+      brightness(95%) contrast(100%);
+  }
+
   .mybuttons {
     display: flex;
     align-items: center;

@@ -48,13 +48,13 @@ function Hero() {
         </h1>
         <h2>Full-Stack Developer</h2>
         <span>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/kasimnurlgn" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
           <a href="https://github.com/kasimnurlgn" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://web.telegram.org/a/" target="_blank">
+          <a href="https://t.me/Ibnu_Aisheteyn" target="_blank">
             <img src={telegramIcon} alt="Telegram icon" />
           </a>
           <a href="https://x.com/Ibnu_Aisheteyn" target="_blank">
