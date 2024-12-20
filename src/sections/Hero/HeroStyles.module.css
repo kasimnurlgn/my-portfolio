@@ -109,6 +109,10 @@ button:active {
     right: 70px;
     width: 30px;
   }
+  .description {
+    max-width: 40ch;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 600px) {
