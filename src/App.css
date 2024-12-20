@@ -108,3 +108,44 @@ p {
     }
   }
 }
+/* Prevent horizontal scrolling on mobile */
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* Ensure all sections fit within the viewport */
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 1rem; /* Add padding for mobile readability */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hero__container,
+  .services__container,
+  .projects__container,
+  .skills__container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0.5rem;
+  }
+
+  .footer {
+    font-size: 0.9rem; /* Adjust footer text size */
+    padding: 1rem; /* Prevent it from overflowing */
+  }
+
+  /* Scale down any oversized headings */
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
