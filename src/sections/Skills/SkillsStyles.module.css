@@ -83,6 +83,8 @@ hr {
 @media (max-width: 599px) {
   .skillGrid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px; /* Padding only on left and right */
+    gap: 12px;
   }
 }
 

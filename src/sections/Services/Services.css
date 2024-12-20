@@ -58,7 +58,8 @@
 @media (max-width: 768px) {
   .col-lg-4 {
     flex: 0 0 100%; /* 1 per row on small screens */
-    max-width: 75%;
+    max-width: 65%;
+    padding: 0 16px;
   }
 }
 
@@ -89,7 +90,7 @@
 }
 
 .service.light p {
-  color: #777; 
+  color: #777;
   font-weight: 400;
 }
 
