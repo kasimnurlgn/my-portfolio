@@ -58,7 +58,7 @@
 @media (max-width: 768px) {
   .col-lg-4 {
     flex: 0 0 100%; /* 1 per row on small screens */
-    max-width: 65%;
+    max-width: 85%;
     padding: 0 16px;
   }
 }
