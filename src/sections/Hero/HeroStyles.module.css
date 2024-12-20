@@ -102,10 +102,25 @@ button:active {
 }
 
 /* Media Queries */
+@media (max-width: 600px) {
+  .colorMode {
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    width: 30px;
+  }
+}
+
 @media (min-width: 600px) {
   .container {
     align-items: center;
     justify-content: space-evenly;
+  }
+  .colorMode {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 30px;
   }
 }
 
