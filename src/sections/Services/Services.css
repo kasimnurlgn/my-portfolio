@@ -1,0 +1,108 @@
+/* General Styling for Service Boxes */
+.service {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  text-align: center;
+  height: 300px;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Iconbox Styling */
+.iconbox {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* Title Styling */
+.service h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Description Styling */
+.service p {
+  font-size: 0.9rem;
+  /* color: #777; */
+  line-height: 1.5;
+  text-align: center;
+  align-items: justify;
+}
+
+/* Layout for Service Boxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the items */
+  gap: 20px; /* Add spacing between the boxes */
+}
+
+.col-lg-4,
+.col-sm-6 {
+  flex: 0 0 30%; /* 3 per row for large screens */
+  max-width: 30%;
+}
+.section-title {
+  margin-bottom: 50px; /* or padding-bottom: 40px; */
+}
+
+/* For screens smaller than 768px (1 card per row) */
+/* For small screens (1 per row) */
+@media (max-width: 768px) {
+  .col-lg-4 {
+    flex: 0 0 100%; /* 1 per row on small screens */
+    max-width: 75%;
+  }
+}
+
+/* For medium screens (2 per row) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .col-lg-4 {
+    flex: 0 0 48%; /* 2 per row on medium screens */
+    max-width: 46%;
+  }
+}
+
+/* For large screens (3 per row) */
+@media (min-width: 1025px) {
+  .col-lg-4 {
+    flex: 0 0 30%; /* 3 per row on large screens */
+    max-width: 29%;
+  }
+}
+
+/* Light Mode Styles */
+.service.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.service.light .iconbox {
+  color: #3498db; /* Light icon color */
+}
+
+.service.light p {
+  color: #777; /* Light text color */
+}
+
+/* Dark Mode Styles */
+.service.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.service.dark .iconbox {
+  color: #ecf0f1; /* Dark icon color */
+}
+
+.service.dark p {
+  color: #bbb; /* Dark text color */
+}

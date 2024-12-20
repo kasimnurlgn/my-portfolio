@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styles from "./ContactStyles.module.css";
 import Swal from "sweetalert2";
 function Contact() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -32,8 +39,15 @@ function Contact() {
   };
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
-      <form action="" onSubmit={onSubmit}>
+      <h1 className="sectionTitle  " data-aos="fade-down" data-aos-delay="150">
+        Contact
+      </h1>
+      <form
+        action=""
+        onSubmit={onSubmit}
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name

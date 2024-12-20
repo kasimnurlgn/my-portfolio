@@ -2,46 +2,98 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
-  span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  img {
-    width: 20px;
-  }
+  padding: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
-.skillList {
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skillGrid {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillBox {
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 26ch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--skill-box-bg, #f9f9f9);
+  border: 2px solid var(--skill-box-border, #333333);
+  border-radius: 8px;
+  padding: 35px;
+  text-align: center;
+  transition: transform 50ms ease-in-out; /* Smooth transition for scaling */
+}
+
+.skillGrid .skillBox:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.skillBox p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 hr {
   width: 100px;
   height: 1px;
   border: none;
-  background-color: var(--text-color);
+  background-color: var(--text-color, #000);
   margin: 30px auto;
 }
 
-@media (width >= 800px) {
-  .skillList {
-    max-width: fit-content;
-    gap: 30px;
+/* Light mode styles */
+.lightBox {
+  background-color: #fff;
+}
 
-    p {
-      font-size: 20px;
-    }
+.lightIcon {
+  color: #0987f2; /* Light theme icon color */
+}
+
+.lightText {
+  color: #333; /* Light theme text color */
+}
+
+/* Dark Theme */
+.darkBox {
+  background-color: #333;
+}
+
+.darkIcon {
+  color: #fff; /* Dark theme icon color */
+}
+
+.darkText {
+  color: #fff; /* Dark theme text color */
+}
+@media (max-width: 599px) {
+  .skillGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  hr {
-    width: 300px;
+@media (min-width: 600px) and (max-width: 1023px) {
+  .skillGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skillGrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
