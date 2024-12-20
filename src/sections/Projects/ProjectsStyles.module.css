@@ -19,7 +19,7 @@
   }
 
   a:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 
@@ -28,6 +28,8 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  max-width: 100%;
+  overflow: visible;
 }
 
 @media (width >= 800px) {

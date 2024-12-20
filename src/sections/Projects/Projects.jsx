@@ -25,32 +25,24 @@ function Projects() {
           link="https://my-evangadi-forum.netlify.app"
           h3="Evangadi Forum"
           p="Bootcamp Platform"
-          data-aos="fade-up"
-          data-aos-delay="200"
         />
         <ProjectCard
           src={apple}
           link="https://kasim-appple-home-page.netlify.app"
           h3="Apple"
           p="homepage"
-          data-aos="fade-up"
-          data-aos-delay="300"
         />
         <ProjectCard
           src={amazon}
           link="https://amazon-frontend-web-app.netlify.app"
           h3="Amazon"
           p="E-commerce Website"
-          data-aos="fade-up"
-          data-aos-delay="400"
         />
         <ProjectCard
           src={elixir}
           link="https://graceful-marigold-65be68.netlify.app/"
           h3="Elixir"
           p="homepage"
-          data-aos="fade-up"
-          data-aos-delay="500"
         />
       </div>
     </section>

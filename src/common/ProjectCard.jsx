@@ -1,13 +1,7 @@
-function ProjectCard({ src, link, h3, p, dataAos, dataAosDelay }) {
+function ProjectCard({ src, link, h3, p }) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      className="project-card" // Add a class here if needed to target specific styles
-      data-aos={dataAos}
-      data-aos-delay={dataAosDelay}
-    >
-      <img src={src} alt={`${h3} logo`} />
+    <a href={link} target="_blank">
+      <img className="hover" src={src} alt={`${h3} logo`} />
       <h3>{h3}</h3>
       <p>{p}</p>
     </a>
