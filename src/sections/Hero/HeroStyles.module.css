@@ -106,18 +106,18 @@ button:active {
     max-width: 40ch;
     margin: 0 auto;
   }
+  .colorMode {
+    top: 5px;
+    right: 80px;
+    width: 30px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 600px) {
   .container {
     align-items: center;
     justify-content: space-evenly;
-  }
-  .colorMode {
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    width: 30px;
   }
 }
 
