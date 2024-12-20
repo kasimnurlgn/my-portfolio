@@ -73,9 +73,8 @@ button:active {
 
 .colorMode {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 30px;
+  right: 0;
+  width: 25px;
 }
 
 .colorMode:hover {
@@ -103,12 +102,6 @@ button:active {
 
 /* Media Queries */
 @media (max-width: 600px) {
-  .colorMode {
-    position: absolute;
-    top: 5px;
-    right: 70px;
-    width: 30px;
-  }
   .description {
     max-width: 40ch;
     margin: 0 auto;
