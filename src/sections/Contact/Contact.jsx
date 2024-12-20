@@ -5,7 +5,7 @@ import styles from "./ContactStyles.module.css";
 import Swal from "sweetalert2";
 function Contact() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1000, once:true });
   }, []);
 
   const onSubmit = async (event) => {

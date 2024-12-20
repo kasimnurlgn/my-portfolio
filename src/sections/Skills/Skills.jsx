@@ -55,8 +55,8 @@ function Skills() {
               theme === "light" ? styles.lightBox : styles.darkBox
             }`}
             key={skill.name}
-            data-aos="fade-right"
-            data-aos-delay={(index + 1) * 100}
+            data-aos="fade-down"
+            data-aos-delay={(index + 1) * 10}
           >
             <div
               className={`${styles.icon} ${

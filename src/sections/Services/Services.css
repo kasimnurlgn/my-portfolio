@@ -31,7 +31,6 @@
 /* Description Styling */
 .service p {
   font-size: 0.9rem;
-  /* color: #777; */
   line-height: 1.5;
   text-align: center;
   align-items: justify;
@@ -90,7 +89,8 @@
 }
 
 .service.light p {
-  color: #777; /* Light text color */
+  color: #777; 
+  font-weight: 400;
 }
 
 /* Dark Mode Styles */

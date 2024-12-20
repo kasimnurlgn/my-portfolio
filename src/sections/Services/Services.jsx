@@ -9,7 +9,7 @@ const Service = () => {
   const { theme } = useTheme(); // Access current theme
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, });
   }, []);
 
   const services = [
