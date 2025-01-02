@@ -5,6 +5,7 @@ import Services from "./sections/Services/Services";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
+import WhyWorkWithMe from "./sections/WhyWorkWithMe/WhyWorkWithMe";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Projects />
       <Skills />
       <Services />
+      <WhyWorkWithMe />
       <Contact />
       <Footer />
     </>

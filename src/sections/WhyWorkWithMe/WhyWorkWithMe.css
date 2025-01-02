@@ -1,0 +1,134 @@
+/* General Section Styling */
+.why-work-with-me {
+  padding: 60px 40px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Card Container Styling */
+.reasons-container {
+  display: grid; /* Using grid to control the layout more precisely */
+  gap: 20px; /* General gap between rows */
+  margin-top: 20px;
+}
+
+/* Card Wrapper */
+.reason-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Styling */
+.reason-card {
+  position: relative;
+  width: 100%;
+  padding-top: 80%; /* Makes the card smaller */
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  box-sizing: border-box;
+}
+
+.reason-card-wrapper:hover .reason-card {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back Styles */
+.reason-card-front,
+.reason-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Moderate shadow */
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.reason-card-front {
+  background-color: var(--card-background);
+}
+
+.reason-card-back {
+  background-color: var(--primary-color);
+  transform: rotateY(180deg);
+  color: var(--background-color);
+}
+
+/* Icon and Title Styling */
+.reason-icon {
+  font-size: 2.5rem; /* Smaller icon */
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.reason-card-front h3 {
+  font-size: 1rem; /* Smaller title */
+  margin: 0;
+}
+
+/* Card Content on Back */
+.reason-card-back p {
+  font-size: 0.85rem; /* Smaller text on the back */
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Light Theme */
+.light {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --card-background: #fff;
+  --primary-color: #3498db;
+}
+
+/* Dark Theme */
+.dark {
+  --background-color: #333;
+  --text-color: #fff;
+  --card-background: #333;
+}
+
+/* Ensure description is visible on dark theme */
+.dark .reason-card-back p {
+  color: var(--text-color); /* Fix description text visibility */
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+  /* Large screens: Three cards per row */
+  .reasons-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Reduced gap between the cards in a row */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Medium screens: Two cards per row */
+  .reasons-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px; /* Gap between cards on medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  /* Small screens: One card per row */
+  .reasons-container {
+    grid-template-columns: 1fr; /* 1 card per row */
+    gap: 20px; /* Standard gap for small screens */
+  }
+}
